@@ -10,10 +10,13 @@ string deployment = Environment.GetEnvironmentVariable("AZURE_OPENAI_DEPLOYMENT"
 string endpoint = Environment.GetEnvironmentVariable("AZURE_OPENAI_ENDPOINT");
 string proxy = Environment.GetEnvironmentVariable("AZURE_OPENAI_PROXY");
 
+ConsoleColor oldColor = Console.ForegroundColor;
+
 if (string.IsNullOrEmpty(apiKey) || string.IsNullOrEmpty(deployment) || string.IsNullOrEmpty(endpoint))
 {
     Console.ForegroundColor = ConsoleColor.Red;
     Console.WriteLine("Please set the AZURE_OPENAI_API_KEY, AZURE_OPENAI_DEPLOYMENT, AZURE_OPENAI_ENDPOINT, and AZURE_OPENAI_PROXY environment variables.");
+    Console.ForegroundColor = oldColor;
     return;
 }
 
@@ -50,7 +53,6 @@ OpenAIPromptExecutionSettings settings = new OpenAIPromptExecutionSettings
 };
 
 // Start the Chat with the user  
-ConsoleColor oldColor = Console.ForegroundColor;
 Console.WriteLine("=== Semantic Kernel Light Controller ===");
 Console.WriteLine("Type something like:\n- 'Turn on the porch light'\n- 'What lights are on?'\nType 'exit' or 'quit' to quit.\n");
 

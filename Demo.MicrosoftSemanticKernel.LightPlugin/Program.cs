@@ -10,33 +10,21 @@ string apiKey = Environment.GetEnvironmentVariable("AZURE_OPENAI_API_KEY");
 string deployment = Environment.GetEnvironmentVariable("AZURE_OPENAI_DEPLOYMENT") ?? "gpt-4o";
 string endpoint = Environment.GetEnvironmentVariable("AZURE_OPENAI_ENDPOINT");
 
+ConsoleColor oldColor = Console.ForegroundColor;
+
 if (string.IsNullOrEmpty(apiKey) || string.IsNullOrEmpty(deployment) || string.IsNullOrEmpty(endpoint))
 {
     Console.ForegroundColor = ConsoleColor.Red;
     Console.WriteLine("Please set the AZURE_OPENAI_API_KEY, AZURE_OPENAI_DEPLOYMENT, and AZURE_OPENAI_ENDPOINT environment variables.");
+    Console.ForegroundColor = oldColor;
     return;
 }
-
-// Configure HttpClient with proxy  
-var proxy = new WebProxy("http://your-proxy-address:port")
-{
-    Credentials = new NetworkCredential("proxyUsername", "proxyPassword")
-};
-
-var httpClientHandler = new HttpClientHandler
-{
-    Proxy = proxy,
-    UseProxy = true
-};
-
-var httpClient = new HttpClient(httpClientHandler);
 
 // Build and configure kernel  
 var builder = Kernel.CreateBuilder().AddAzureOpenAIChatCompletion(
    deploymentName: deployment,
    endpoint: endpoint,
-   apiKey: apiKey,
-   httpClient: httpClient
+   apiKey: apiKey
 );
 
 var kernel = builder.Build();
@@ -52,7 +40,6 @@ OpenAIPromptExecutionSettings settings = new OpenAIPromptExecutionSettings
 };
 
 // Start the Chat with the user  
-ConsoleColor oldColor = Console.ForegroundColor;
 Console.WriteLine("=== Semantic Kernel Light Controller ===");
 Console.WriteLine("Type something like:\n- 'Turn on the porch light'\n- 'What lights are on?'\nType 'exit' or 'quit' to quit.\n");
 
