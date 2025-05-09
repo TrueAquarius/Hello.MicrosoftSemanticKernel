@@ -1,0 +1,27 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.12.35527.113 d17.12
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Demo.MicrosoftSemanticKernel.LightPlugin", "Demo.MicrosoftSemanticKernel.LightPlugin\Demo.MicrosoftSemanticKernel.LightPlugin.csproj", "{EB704E97-9EAB-4735-B13C-9424EEC31E75}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Projektmappenelemente", "Projektmappenelemente", "{83F377FE-B852-4243-B7E3-F3971720B4AE}"
+	ProjectSection(SolutionItems) = preProject
+		REAME.MD = REAME.MD
+	EndProjectSection
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{EB704E97-9EAB-4735-B13C-9424EEC31E75}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{EB704E97-9EAB-4735-B13C-9424EEC31E75}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{EB704E97-9EAB-4735-B13C-9424EEC31E75}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{EB704E97-9EAB-4735-B13C-9424EEC31E75}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal
