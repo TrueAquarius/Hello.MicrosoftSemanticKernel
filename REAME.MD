@@ -6,6 +6,7 @@ Each project implements specific features integrated with the Semantic Kernel.
 ## Projects  
 
 - **Demo.MicrosoftSemanticKernel.LightPlugin**: A plugin for controlling lights, offering features such as turning lights on/off, changing colors, and retrieving their color.  
+- **Demo.MicrosoftSemanticKernel.LightPluginWithProxy**: same functionality as "Demo.MicrosoftSemanticKernel.LightPlugin". However, it allows accessing OpenAI through a proxy.
 
 ## Prerequisites  
 

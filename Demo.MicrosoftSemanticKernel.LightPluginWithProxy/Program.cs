@@ -1,35 +1,33 @@
-﻿using System.Net;
-using System.Net.Http;
-using Demo.MicrosoftSemanticKernel.LightPlugin;
+﻿using Demo.MicrosoftSemanticKernel.LightPluginWithProxy;
 using Microsoft.SemanticKernel;
 using Microsoft.SemanticKernel.ChatCompletion;
 using Microsoft.SemanticKernel.Connectors.OpenAI;
+using System.Net.Http;
 
 // Replace with your own OpenAI API key and model  
 string apiKey = Environment.GetEnvironmentVariable("AZURE_OPENAI_API_KEY");
 string deployment = Environment.GetEnvironmentVariable("AZURE_OPENAI_DEPLOYMENT") ?? "gpt-4o";
 string endpoint = Environment.GetEnvironmentVariable("AZURE_OPENAI_ENDPOINT");
+string proxy = Environment.GetEnvironmentVariable("AZURE_OPENAI_PROXY");
 
 if (string.IsNullOrEmpty(apiKey) || string.IsNullOrEmpty(deployment) || string.IsNullOrEmpty(endpoint))
 {
     Console.ForegroundColor = ConsoleColor.Red;
-    Console.WriteLine("Please set the AZURE_OPENAI_API_KEY, AZURE_OPENAI_DEPLOYMENT, and AZURE_OPENAI_ENDPOINT environment variables.");
+    Console.WriteLine("Please set the AZURE_OPENAI_API_KEY, AZURE_OPENAI_DEPLOYMENT, AZURE_OPENAI_ENDPOINT, and AZURE_OPENAI_PROXY environment variables.");
     return;
 }
 
 // Configure HttpClient with proxy  
-var proxy = new WebProxy("http://your-proxy-address:port")
-{
-    Credentials = new NetworkCredential("proxyUsername", "proxyPassword")
-};
-
 var httpClientHandler = new HttpClientHandler
 {
-    Proxy = proxy,
-    UseProxy = true
+    Proxy = new System.Net.WebProxy(proxy),
+    UseProxy = string.IsNullOrEmpty(proxy)
 };
 
-var httpClient = new HttpClient(httpClientHandler);
+var httpClient = new HttpClient(httpClientHandler)
+{
+    BaseAddress = new Uri(endpoint)
+};
 
 // Build and configure kernel  
 var builder = Kernel.CreateBuilder().AddAzureOpenAIChatCompletion(

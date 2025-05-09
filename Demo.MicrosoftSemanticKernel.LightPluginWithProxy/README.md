@@ -1,6 +1,7 @@
-﻿# Demo.MicrosoftSemanticKernel.LightPlugin
+﻿# Demo.MicrosoftSemanticKernel.LightPluginWithProxy
 
-This project is a plugin for controlling lights, integrated with the Microsoft Semantic Kernel. It provides the following features:
+This project provides the same functionality as "Demo.MicrosoftSemanticKernel.LightPlugin". However, it allows accessing OpenAI through a proxy.
+It is a plugin for controlling lights, integrated with the Microsoft Semantic Kernel. It provides the following features:
 
 - Retrieve the status of all lights
 - Turn lights on and off
@@ -43,6 +44,7 @@ This project is a plugin for controlling lights, integrated with the Microsoft S
   - `AZURE_OPENAI_ENDPOINT`: The endpoint for the Azure OpenAI service.
   - `AZURE_OPENAI_API_KEY`: The API key for the Azure OpenAI service.
   - `AZURE_OPENAI_DEPLOYMENT_NAME`: The deployment name for the Azure OpenAI service.
+  - `AZURE_OPENAI_PROXY`: The proxy information.
 
 ## License
 
