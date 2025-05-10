@@ -9,6 +9,7 @@ Each project implements specific features integrated with the Semantic Kernel.
 - **Demo.MicrosoftSemanticKernel.LightPluginWithProxy**: same functionality as "Demo.MicrosoftSemanticKernel.LightPlugin". However, it allows accessing OpenAI through a proxy.
 - **Demo.MicrosoftSemanticKernel.FunctionFromFile**: This project demonstrates how to use Semantic Functions from a file. It is a simple language translator.
 - **Demo.MicrosoftSemanticKernel.VectorStores**: This project demonstrates how to create embeddings, use in-memory vector stores, perform searches in vector stores. 
+- **Demo.MicrosoftSemanticKernel.VectorDistance**: An interesting experiment which compares distances of related texts. 
 
 ## Prerequisites  
 
