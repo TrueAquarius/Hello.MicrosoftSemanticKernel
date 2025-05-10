@@ -68,7 +68,7 @@ while (true)
     // Construct arguments
     var arguments = new KernelArguments() { ["input"] = input };
 
-    // Run the Function called Joke
+    // Run the function called "Translate" (same as the sub-folder name under "prompt_templates")
     var result = await kernel.InvokeAsync(myPluginFunctions["Translate"], arguments);
 
     Console.ForegroundColor = ConsoleColor.Green;
