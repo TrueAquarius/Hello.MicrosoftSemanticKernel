@@ -46,7 +46,7 @@ This project is a plugin for controlling lights, integrated with the Microsoft S
 
 ## Notes
 
-- At the time when this demo was created, the Semantic Kernel framework seemed to still undergo a lot of changes. Therefore these code examples my not work in future releases of that framework.
+- At the time when this demo was created, the Semantic Kernel framework seemed to still undergo a lot of changes. Therefore these code examples may not work in future releases of that framework.
 - Microsoft Semantic Kernel version 1.49.0 was used for this demo.
 
 

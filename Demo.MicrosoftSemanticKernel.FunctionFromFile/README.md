@@ -17,7 +17,7 @@ This project demonstrates how to use Semantic Functions from a file. It is a sim
 
 ## Notes
 
-- At the time when this demo was created, the Semantic Kernel framework seemed to still undergo a lot of changes. Therefore these code examples my not work in future releases of that framework.
+- At the time when this demo was created, the Semantic Kernel framework seemed to still undergo a lot of changes. Therefore these code examples may not work in future releases of that framework.
 - Microsoft Semantic Kernel version 1.49.0 was used for this demo.
 
 ## License
