@@ -40,7 +40,7 @@ if(!Path.Exists(myPluginDirectoryPath))
     return;
 }
 
-// Load the FunPlugin from the Plugins Directory
+// Load the myPlugin from the Plugins Directory
 var myPluginFunctions = kernel.ImportPluginFromPromptDirectory(myPluginDirectoryPath);
 
 if (myPluginFunctions.Count() == 0)
