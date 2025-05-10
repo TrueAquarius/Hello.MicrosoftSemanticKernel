@@ -1,7 +1,7 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 17
-VisualStudioVersion = 17.12.35527.113 d17.12
+VisualStudioVersion = 17.12.35527.113
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Demo.MicrosoftSemanticKernel.LightPlugin", "Demo.MicrosoftSemanticKernel.LightPlugin\Demo.MicrosoftSemanticKernel.LightPlugin.csproj", "{EB704E97-9EAB-4735-B13C-9424EEC31E75}"
 EndProject
@@ -14,6 +14,8 @@ EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Demo.MicrosoftSemanticKernel.LightPluginWithProxy", "Demo.MicrosoftSemanticKernel.LightPluginWithProxy\Demo.MicrosoftSemanticKernel.LightPluginWithProxy.csproj", "{2E269872-ABE4-4F54-96A4-CC3234F805B2}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Demo.MicrosoftSemanticKernel.FunctionFromFile", "Demo.MicrosoftSemanticKernel.FunctionFromFile\Demo.MicrosoftSemanticKernel.FunctionFromFile.csproj", "{B4CBBC5F-A6E9-480D-A616-93BB46015473}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Demo.MicrosoftSemanticKernel.VectorStores", "Demo.MicrosoftSemanticKernel.VectorStores\Demo.MicrosoftSemanticKernel.VectorStores.csproj", "{66D00C87-E3EE-4584-9B99-95416F6B3A3E}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -33,6 +35,10 @@ Global
 		{B4CBBC5F-A6E9-480D-A616-93BB46015473}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{B4CBBC5F-A6E9-480D-A616-93BB46015473}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{B4CBBC5F-A6E9-480D-A616-93BB46015473}.Release|Any CPU.Build.0 = Release|Any CPU
+		{66D00C87-E3EE-4584-9B99-95416F6B3A3E}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{66D00C87-E3EE-4584-9B99-95416F6B3A3E}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{66D00C87-E3EE-4584-9B99-95416F6B3A3E}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{66D00C87-E3EE-4584-9B99-95416F6B3A3E}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
