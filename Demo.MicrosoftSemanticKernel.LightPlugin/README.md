@@ -44,6 +44,12 @@ This project is a plugin for controlling lights, integrated with the Microsoft S
   - `AZURE_OPENAI_API_KEY`: The API key for the Azure OpenAI service.
   - `AZURE_OPENAI_DEPLOYMENT_NAME`: The deployment name for the Azure OpenAI service.
 
+## Notes
+
+- At the time when this demo was created, the Semantic Kernel framework seemed to still undergo a lot of changes. Therefore these code examples my not work in future releases of that framework.
+- Microsoft Semantic Kernel version 1.49.0 was used for this demo.
+
+
 ## License
 
 This project is licensed under the [MIT License](../LICENSE.txt).
