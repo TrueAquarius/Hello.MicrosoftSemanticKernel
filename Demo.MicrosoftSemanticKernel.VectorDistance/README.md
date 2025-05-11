@@ -67,7 +67,7 @@ Here are a couple of links which 'inspired' this demo:
 
 - At the time when this demo was created, the Semantic Kernel framework seemed to still undergo a lot of changes. Therefore these code examples may not work in future releases of that framework.
 - Microsoft Semantic Kernel version 1.49.0 was used for this demo.
-- If you change the embedding model, you may nee to change the vector length in the Glossary class accordingly.
+- If you change the embedding model, you may need to change the vector length in the Glossary class accordingly.
 - This demo uses pre-release packages of the Semantic Kernel framework: 
 	- Microsoft.Extensions.VectorData.Abstractions (9.0.0-preview)
 

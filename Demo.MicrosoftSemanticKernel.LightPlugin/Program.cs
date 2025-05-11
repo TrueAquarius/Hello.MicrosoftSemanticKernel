@@ -1,11 +1,9 @@
-﻿using System.Net;
-using System.Net.Http;
-using Demo.MicrosoftSemanticKernel.LightPlugin;
+﻿using Demo.MicrosoftSemanticKernel.LightPlugin;
 using Microsoft.SemanticKernel;
 using Microsoft.SemanticKernel.ChatCompletion;
 using Microsoft.SemanticKernel.Connectors.OpenAI;
 
-// Replace with your own OpenAI API key and model  
+// Replace with your own Azure OpenAI API key and model  
 string apiKey = Environment.GetEnvironmentVariable("AZURE_OPENAI_API_KEY");
 string deployment = Environment.GetEnvironmentVariable("AZURE_OPENAI_DEPLOYMENT") ?? "gpt-4o";
 string endpoint = Environment.GetEnvironmentVariable("AZURE_OPENAI_ENDPOINT");
