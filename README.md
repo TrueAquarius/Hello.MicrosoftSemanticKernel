@@ -10,12 +10,15 @@ Each project implements specific features integrated with the Semantic Kernel.
 - **Demo.MicrosoftSemanticKernel.FunctionFromFile**: This project demonstrates how to use Semantic Functions from a file. It is a simple language translator.
 - **Demo.MicrosoftSemanticKernel.VectorStores**: This project demonstrates how to create embeddings, use in-memory vector stores, perform searches in vector stores. 
 - **Demo.MicrosoftSemanticKernel.VectorDistance**: An interesting experiment which compares distances of related texts. 
+- **Demo.MicrosoftSemanticKernel.AzureAISearch**: A small RAG System using Microsoft Semantic Kernel and Azure OpenAI Service. 
 
 ## Prerequisites  
 
 - .NET 8 SDK  
 - Visual Studio 2022 or later  
-- C# 12.0  
+- C# 12.0
+- Azure OpenAI Service
+- other sub-project specific (see project specific ReadMe files)
 
 ## Installation  
 
