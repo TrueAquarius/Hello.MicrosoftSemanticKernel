@@ -1,6 +1,6 @@
-# Demo.MicrosoftSemanticKernel  
+# Hello.MicrosoftSemanticKernel  
 
-This repository contains a collection of projects demonstrating the use of the Microsoft Semantic Kernel.  
+This repository contains a collection of "Hello World"-level projects demonstrating the use of the Microsoft Semantic Kernel.  
 Each project implements specific features integrated with the Semantic Kernel.  
 
 ## Projects  
